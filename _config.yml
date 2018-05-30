@@ -10,7 +10,7 @@ title:            Hadrien Gourlé
 tagline:          ''
 description:      'PhD student in bioinformatics in Uppsala, Sweden'
 url:              www.hadriengourle.com
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Hadrien Gourlé'
