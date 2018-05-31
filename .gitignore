@@ -1,7 +1,2 @@
-# jekyll stuff
-_site/
-.sass-cache/
-.jekyll-metadata
-
 # Mac stuff
 .DS_Store
