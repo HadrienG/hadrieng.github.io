@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hadrien Gourlé</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Hadrien Gourlé</h1>
+        <img src="https://avatars2.githubusercontent.com/u/7337110?s=400&u=33826be6e4bb340f888ede72cd89ac289ceae3fe&v=4&amp;s=460" alt="">
+        <p>I’m Hadrien Gourlé, bioinformatician and PhD-student at the Swedish University of Agricultural Sciences In Uppsala, Sweden.</p>
+        <p>My PhD is about assessing the anthropogenic impact on West Indian Ocean coral reefs.</p>
+        <br>
+
+        <h2>Blog</h2>
+
+        <h2>Software</h2>
+            <p>MetLab, a metagenomics analysis pipeline</p>
+            <p>Taxadb, a python library to query the ncbi taxonomy</p>
+            <p>InSilicoSeq, a sequencing simulator</p>
+
+        <a href="https://www.hadriengourle.com/tutorials"><h2>Tutorials</h2></a>
+
+        <div id="footer">
+            <ul>
+                <li v-for="link in links">
+                    <a :href="link.web">
+                        <span :class="link.icon"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- production version, optimized for size and speed -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+        <script src="main.js"></script>
+    </body>
+</html>

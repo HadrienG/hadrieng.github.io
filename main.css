@@ -1,0 +1,54 @@
+html {
+    background-color: #fefefe;
+}
+body {
+    width: 600px;
+    font-family: 'Playfair Display', serif;
+    color: #454545;
+    font-size: 18px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Mina', sans-serif;
+    text-align: center;
+    padding-left: 1em;
+}
+
+h2 {
+    font-family: 'Mina', sans-serif;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    &:visited {
+        color: #7d013e;
+    }
+}
+
+#footer {
+    text-align: center;
+}
+#footer ul {
+    padding: 0;
+}
+#footer li {
+    display: inline;
+    padding-left: 1em;
+}
+
+ img {
+    width: 180px;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0.25em;
+    opacity: 1;
+    filter: none;
+    filter: grayscale(20%);
+}
