@@ -1,0 +1,90 @@
+html {
+    background-color: #fefefe;
+}
+body {
+    width: 600px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #454545;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Mina', sans-serif;
+    text-align: center;
+    padding-left: 1em;
+}
+h2 {
+    font-family: 'Mina', sans-serif;
+    text-align: left;
+    cursor: pointer;
+    color: #000;
+}
+h2:hover {
+    color: #7d013e;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.underline {
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+.underline:hover {
+    color: #7d013e;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+#publications p {
+    margin: 0px 0;
+}
+
+#publications li {
+    font-weight: 100;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#software li {
+    font-weight: 100;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#software a {
+    padding-left: 10px;
+}
+
+#footer {
+    margin-top: 50px;
+    text-align: center;
+}
+#footer ul {
+    padding: 0;
+}
+#footer li {
+    display: inline;
+    padding-left: 1em;
+}
+
+img {
+    width: 180px;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0.25em;
+    opacity: 1;
+    filter: none;
+    filter: grayscale(20%);
+}
