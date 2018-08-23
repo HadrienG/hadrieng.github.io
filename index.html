@@ -39,6 +39,22 @@
             </transition>
         </div>
 
+        <div id="cv">
+            <h2 v-on:click="show = !show">Curriculum Vitae</h2>
+            <transition name="fade">
+                <div v-if="show">
+                    <ul>
+                        <li>
+                            <a href="assets/pdf/hadrien_gourle_cv.pdf" target="_blank"><i class="far fa-file-pdf fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://v2.overleaf.com/read/mkgfzbkbtrtj" target="_blank"><i class="far fa-file-code fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </transition>
+        </div>
+
         <div id="publications">
             <h2 v-on:click="show = !show">Selected Publications</h2>
             <transition name="fade">
@@ -73,7 +89,7 @@
             </transition>
         </div>
 
-        <a href="https://www.hadriengourle.com/tutorials"><h2>Course materials</h2></a>
+        <a href="https://www.hadriengourle.com/tutorials" target="_blank"><h2>Course materials</h2></a>
 
         <div id="footer">
             <ul>
@@ -93,6 +109,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/blog.js"></script>
+        <script src="assets/js/cv.js"></script>
         <script src="assets/js/publications.js"></script>
         <script src="assets/js/software.js"></script>
     </body>

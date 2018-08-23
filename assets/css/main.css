@@ -47,6 +47,18 @@ a {
   opacity: 0;
 }
 
+#cv {
+    text-align: left;
+}
+
+#cv ul {
+    padding: 0;
+}
+#cv li {
+    display: inline;
+    padding-left: 1em;
+}
+
 #publications p {
     margin: 0px 0;
 }
