@@ -1,116 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Hadrien Gourlé</title>
-        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,400" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
-    <body>
-        <h1>Hadrien Gourlé</h1>
-        <img src="https://avatars2.githubusercontent.com/u/7337110?s=400&u=33826be6e4bb340f888ede72cd89ac289ceae3fe&v=4&amp;s=460" alt="">
-        <p>
-            Hi! I'm a PhD-student in Bioinformatics at the <a class="underline" href="https://sgbc.slu.se">SLU Global Bioinformatics centre</a> under the supervision of  <a class="underline" href="https://www.slu.se/en/cv/erik-bongcam-rudloff/">Pr. Erik Bongcam-Rudloff</a>.
-            Our research group is located at the <a class="underline" href="https://slu.se">Swedish University of Agricultural Sciences</a> in Uppsala, Sweden.
-        </p>
-        <p>
-            My PhD is about assessing the anthropogenic impact on West Indian Ocean coral reefs.
-            Coral reefs are one of the most diverse ecosystems on the planet.
-            They face great challenges, and their population is rapidly declining. They are threatened by the rise of ocean temperature, by unsustainable fishing practices and pollution from industries.
-            The coral microbiome - the microbes that live inside the coral - is heavily changing in polluted areas.
-        </p>
-        <p>
-            We aim to use a combination of cutting-edge methods on the coral mucus, surrouding water and sediments to sequence the DNA and the genes of these microbes. They might give insight of how to better protect the coral from aggressors, and if polluted areas are less resistant to climate change!
-        </p>
-        <p>
-            I also have a great interest for open source software and open science, and am an active instructor for <a class="underline" href="https://carpentries.org/">The Carpentries</a>.
-        </p>
-        <br>
 
-        <div id="blog">
-            <h2 v-on:click="show = !show">Blog</h2>
-            <transition name="fade">
-                <p v-if="show">
-                    Coming soon!
-                </p>
-            </transition>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <title>Hadrien Gourlé</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
 
-        <div id="cv">
-            <h2 v-on:click="show = !show">Curriculum Vitae</h2>
-            <transition name="fade">
-                <div v-if="show">
-                    <ul>
-                        <li>
-                            <a href="assets/pdf/hadrien_gourle_cv.pdf" target="_blank"><i class="far fa-file-pdf fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://v2.overleaf.com/read/mkgfzbkbtrtj" target="_blank"><i class="far fa-file-code fa-3x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </transition>
-        </div>
+<body>
+    <h1>Hadrien Gourlé</h1>
+    <img src="https://avatars2.githubusercontent.com/u/7337110?s=400&u=33826be6e4bb340f888ede72cd89ac289ceae3fe&v=4&amp;s=460"
+        alt="">
+    <p>
+        Hi! I'm a postdoc in Bioinformatics in <a class="underline"
+            href="https://igp.uu.se/research/genetics_genomics/asa-johansson/">Åsa Johansson</a>'s group at <a
+            class="underline" href="https://www.uu.se/en">Uppsala University</a> in Uppsala, Sweden.
+    </p>
+    <p>
+        The main aim of my postdoctoral position is to develop methods for detection of human diseases.
+        We aim to employ machine learning approaches for more accurately predict complex genetic diseases - that is,
+        diseases caused by more than one genetic factor - based on your genome.
+    </p>
+    <p>
+        Previously, I was a PhD-student in Bioinformatics at the <a class="underline"
+            href="https://www.slu.se/en/">Swedish University of Agricultural Sciences</a> under the supervision of <a
+            class="underline" href="https://www.slu.se/en/cv/erik-bongcam-rudloff/">Pr. Erik Bongcam-Rudloff</a>.
+    </p>
+    <p>
+        My PhD was about assessing the anthropogenic impact on West Indian Ocean coral reefs, as well as developping new
+        methods for metagenomics.
+        Coral reefs are one of the most diverse ecosystems on the planet, they face great challenges, and their
+        population is rapidly declining. They are threatened by the rise of ocean
+        temperature, by unsustainable fishing practices and pollution from industries.
+        The coral microbiome - the microbes that live inside the coral - is heavily changing in polluted areas.
+        We used a combination of cutting-edge methods on the coral mucus, surrouding water and sediments to
+        sequence the DNA and the genes of these microbes. They might give insight of how to better protect the coral
+        from aggressors, and if polluted areas are less resistant to climate change!
+    </p>
+    <p>
+        I also have a great interest for open source software and open science, and am an active instructor for <a
+            class="underline" href="https://carpentries.org/">The Carpentries</a>.
+    </p>
+    <br>
 
-        <div id="publications">
-            <h2 v-on:click="show = !show">Selected Publications</h2>
-            <transition name="fade">
-                <div v-if="show">
-                    <ul class="fa-ul">
-                        <li v-for="pub in pubs">
-                            <span class="fa-li"><i class="fas fa-angle-right"></i></span>
-                            {{ pub.author }} <i>et al.</i> ({{pub.year}}). <a class="underline" :href="'https://doi.org/' + pub.doi">{{ pub.title }}</a> <i>{{ pub.journal }}.</i> doi: <a class="underline" :href="'https://doi.org/' + pub.doi">{{ pub.doi }}</a>
-                        </li>
-                    </ul>
-                </div>
-            </transition>
-        </div>
+    <div id="blog">
+        <h2 v-on:click="show = !show">Blog</h2>
+        <transition name="fade">
+            <p v-if="show">
+                Coming soon!
+            </p>
+        </transition>
+    </div>
 
-        <div id="software">
-            <h2 v-on:click="show = !show">Software</h2>
-            <transition name="fade">
-                <div v-if="show">
-                    <ul class="fa-ul">
-                        <li v-for="s in soft">
-                            <span class="fa-li"><i class="fas fa-angle-right"></i></span>
-                            <strong>{{ s.name }}:</strong> <i>{{ s.description }}</i>
-                            <a :href="s.repo">
-                                <span class="fab fa-github"></span>
-                            </a>
-                            <a :href="s.doc">
-                                <span class="fas fa-book"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </transition>
-        </div>
+    <div id="cv">
+        <h2 v-on:click="show = !show">Curriculum Vitae</h2>
+        <transition name="fade">
+            <div v-if="show">
+                <ul>
+                    <li>
+                        <a href="assets/pdf/hadrien_gourle_cv.pdf" target="_blank"><i
+                                class="far fa-file-pdf fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://v2.overleaf.com/read/mkgfzbkbtrtj" target="_blank"><i
+                                class="far fa-file-code fa-3x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </transition>
+    </div>
 
-        <a href="https://www.hadriengourle.com/tutorials" target="_blank"><h2>Course materials</h2></a>
+    <div id="publications">
+        <h2 v-on:click="show = !show">Selected Publications</h2>
+        <transition name="fade">
+            <div v-if="show">
+                <ul class="fa-ul">
+                    <li v-for="pub in pubs">
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>
+                        {{ pub.author }} <i>et al.</i> ({{pub.year}}). <a class="underline"
+                            :href="'https://doi.org/' + pub.doi">{{ pub.title }}</a> <i>{{ pub.journal }}.</i> doi: <a
+                            class="underline" :href="'https://doi.org/' + pub.doi">{{ pub.doi }}</a>
+                    </li>
+                </ul>
+            </div>
+        </transition>
+    </div>
 
-        <div id="footer">
-            <ul>
-                <li v-for="link in links">
-                    <a :href="link.web">
-                        <span :class="link.icon"></span>
-                    </a>
-                </li>
-            </ul>
-            <a href="license.html">
-                <span class="far fa-copyright fa-flip-horizontal"></span> 2017-2018 Hadrien Gourlé
-            </a>
-        </div>
-        <!-- development version, includes helpful console warnings -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-        <!-- production version, optimized for size and speed -->
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/blog.js"></script>
-        <script src="assets/js/cv.js"></script>
-        <script src="assets/js/publications.js"></script>
-        <script src="assets/js/software.js"></script>
-    </body>
+    <div id="software">
+        <h2 v-on:click="show = !show">Software</h2>
+        <transition name="fade">
+            <div v-if="show">
+                <ul class="fa-ul">
+                    <li v-for="s in soft">
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>
+                        <strong>{{ s.name }}:</strong> <i>{{ s.description }}</i>
+                        <a :href="s.repo">
+                            <span class="fab fa-github"></span>
+                        </a>
+                        <a :href="s.doc">
+                            <span class="fas fa-book"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </transition>
+    </div>
+
+    <a href="https://www.hadriengourle.com/tutorials" target="_blank">
+        <h2>Course materials</h2>
+    </a>
+
+    <div id="footer">
+        <ul>
+            <li v-for="link in links">
+                <a :href="link.web">
+                    <span :class="link.icon"></span>
+                </a>
+            </li>
+        </ul>
+        <a href="license.html">
+            <span class="far fa-copyright fa-flip-horizontal"></span> 2017-2018 Hadrien Gourlé
+        </a>
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/cv.js"></script>
+    <script src="assets/js/publications.js"></script>
+    <script src="assets/js/software.js"></script>
+</body>
+
 </html>
