@@ -1,47 +1,57 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { ref, computed } from 'vue'
+import me from './components/me.vue'
+import license from './components/license.vue'
+
+const routes = {
+  '/': me,
+  '/license': license
+}
+
+const currentPath = ref(window.location.hash)
+
+window.addEventListener('hashchange', () => {
+  currentPath.value = window.location.hash
+})
+
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || '/'] || NotFound
+})
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <h1>Hadrien Gourlé</h1>
+    <!-- <me /> | <license /> -->
+    <component :is="currentView" />
   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+img {
+    width: 180px;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0.25em;
+    opacity: 1;
+    filter: none;
+    filter: grayscale(20%);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.underline {
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+.underline:hover {
+    color: #7d013e;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+h1 {
+  font-family: 'Mina', sans-serif;
+  text-align: center;
+  padding-left: 1em;
 }
 </style>

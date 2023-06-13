@@ -1,35 +1,32 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,200,400');
+@import url('https://fonts.googleapis.com/css?family=Mina');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
 
-  font-weight: normal;
+html {
+  background-color: #fefefe;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+body {
+  color: #454545;
+  width: 600px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #454545;
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 1em;
+  line-height: 1.6;
+  text-align: justify;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #000;
   transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
