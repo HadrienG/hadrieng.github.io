@@ -1,6 +1,7 @@
-const footer = new Vue({
-    el: "#footer",
-    data: {
+<script>
+export default {
+  data() {
+    return {
         links: [
             {
                 key: 0,
@@ -28,5 +29,36 @@ const footer = new Vue({
                 icon: "fas fa-flask"
             }
         ]
-    },
-});
+    }
+  }
+}
+</script>
+
+<template>
+    <div id="footer">
+        <ul>
+            <li v-for="link in links">
+                <a :href="link.web">
+                    <span :class="link.icon"></span>
+                </a>
+            </li>
+        </ul>
+        <a href="#/license">
+            <span class="far fa-copyright fa-flip-horizontal"></span> 2017-2018 Hadrien Gourlé
+        </a>
+    </div>
+</template>
+
+<style scoped>
+#footer {
+    margin-top: 50px;
+    text-align: center;
+}
+#footer ul {
+    padding: 0;
+}
+#footer li {
+    display: inline;
+    padding-left: 1em;
+}
+</style>
